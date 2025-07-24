@@ -61,6 +61,12 @@ Each Code Captain command follows a structured 4-phase approach:
 - Create deliverables in appropriate project locations (`/docs/adr/`, `/docs/stories/`, etc.)
 - Integrate with external tools via MCP when beneficial
 
+## ⚡ Installation
+
+```bash
+mkdir .code-captain && curl -sL https://github.com/bradrisse/code-captain/archive/main.tar.gz | tar xz --strip-components=1 --exclude='README.md' --exclude='readme.md' --exclude='README' --exclude='.git*' -C .code-captain
+```
+
 ## 🎮 Quick Start
 
 ### Using a Command

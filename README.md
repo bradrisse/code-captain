@@ -32,6 +32,7 @@ Code Captain provides:
 ### Development Workflow
 - **`commit.md`** - Generate conventional commit messages by analyzing staged changes
 - **`review-architecture.md`** - Analyze and document software architecture patterns
+- **`status-update.md`** - Generate plain text status updates from recent git activity
 
 ### Framework Management
 - **`new-command.md`** - Meta-command for creating new commands in the framework
@@ -109,6 +110,18 @@ git add .
 // 4. Offer to execute the commit
 ```
 
+### Example: Creating a Status Update
+
+```
+@status-update.md
+
+// The command will:
+// 1. Analyze recent git commits and uncommitted changes
+// 2. Group related work by feature/component
+// 3. Translate technical changes into readable descriptions
+// 4. Generate plain text status update ready for copy/paste
+```
+
 ## 📁 Project Structure
 
 ```
@@ -120,6 +133,7 @@ code-captain/
 ├── new-command.md           # Create new framework commands
 ├── research.md              # Conduct systematic research
 ├── review-architecture.md   # Analyze software architecture
+├── status-update.md         # Generate status updates from git activity
 
 ```
 
@@ -233,6 +247,25 @@ Includes user profile synchronization and token refresh handling.
 Fixes: #234
 ```
 
+### Status Update
+```
+Status Update - January 15, 2024
+
+Yesterday:
+- Completed OAuth2 integration with Google and GitHub providers
+- Fixed critical session timeout bug affecting mobile users
+- Code review for payment processing refactor
+
+Today:
+- Writing unit tests for authentication module
+- Starting user dashboard wireframe review
+- Team architecture discussion at 3pm
+
+Blockers:
+- API documentation review needed for dashboard endpoints
+- Staging environment access required for payment testing
+```
+
 ## 🤔 Why Code Captain?
 
 **vs. Manual AI Prompting:**
@@ -269,4 +302,4 @@ This project is part of the broader effort to improve AI-assisted development wo
 
 ---
 
-**Get Started:** Try `@commit.md` for your next commit or `@create-user-story.md` for your next agile story. Experience the difference of consistent, tool-integrated AI workflows. 
+**Get Started:** Try `@commit.md` for your next commit, `@status-update.md` for your daily standup, or `@create-user-story.md` for your next agile story. Experience the difference of consistent, tool-integrated AI workflows. 
